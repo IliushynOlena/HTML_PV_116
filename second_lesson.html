@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to CSS</title>
+    <style>
+/*CSS Selector
+type
+{
+    property:value
+    property:value
+    property:value
+    .......
+}*/
+   
+    h1,h2{
+        background-color: blue;
+        color: white;
+        font-size: 30px;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 10px 20px 10px rgb(0, 0, 0);
+        border: 2px solid lightseagreen;
+
+    }
+    h1,
+    h2,
+    h3{
+        text-align: center;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height:150%
+    }
+    code{
+        background-color: black;
+        color: white;
+        font-size: 22px;
+        font-family: monospace;
+        padding: 1px;
+        border-radius: 4px;       
+    }
+    mark{
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 10px;
+        background-color: aqua;
+    }
+    .main-word
+    {
+        color: rgb(13, 77, 76);
+        font-size: 22px;
+        border: 1px solid black;
+        padding: 2px;
+    }
+    .styled{
+        text-decoration: underline;
+        font-weight: normal;
+    }
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .serif-font{
+        font-family: serif;
+    }
+    .sans-serif-font{
+        font-family: sans-serif;
+    }
+    .monospace-font{
+        font-family: monospace;
+    }
+    .cursive-font{
+        font-family: cursive;
+    }
+    .fantasy-font{
+        font-family: fantasy;
+    }
+    #main-title
+    {
+        background-color: darkcyan;
+        color: black;
+        border-color: black;
+    }
+    .color1{color: rgb(64, 63, 63);}
+    .color2{color: rgb(94, 92, 92);}
+    .color3{color: gray;}
+    .color4{color: rgb(234, 233, 233);}
+    </style>
+</head>
+<body>
+    <h1 id="main-title">Intro to <abbr title="Cascading Style Sheets">CSS</abbr></h1>
+    <p> <strong class="main-word">CSS is a special style</strong>  language used to describe the appearance of pages. 
+        The pages themselves are written in data markup languages. 
+        CSS is the core technology of the World Wide Web, along 
+        with HTML and JavaScript.
+        <strong class="styled" >Lorem, ipsum dolor sit amet consectetur </strong> adipisicing elit. Nemo 
+        illum inventore nulla doloribus rem, est, nostrum dolor doloremque 
+        <span class="color1">ex nam quae magni accusamus incidunt ipsum eos  enim quos vitae </span>
+        <span class="color2">ex nam quae magni accusamus incidunt ipsum eos  enim quos vitae </span>
+        <span class="color3">ex nam quae magni accusamus incidunt ipsum eos  enim quos vitae </span>
+        <span class="color4">ex nam quae magni accusamus incidunt ipsum eos  enim quos vitae </span>
+        aspernatur. Expedita repudiandae impedit atque cupiditate 
+        est magni molestias error repellat aspernatur id eaque ad, 
+        optio maxime, dicta hic inventore recusandae.</p>
+        <p>H<sub>2</sub>CO<sub>3</sub> <br> <hr>  2 <sup>3</sup> = 8</p>
+        <h2 style="background-color:darkblue;color:white;text-align:center">Inline style</h2>
+        <p style="color:blue;font-weight:700;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem 
+            culpa voluptatibus eum molestias? Molestias porro velit adipisci 
+            laudantium ipsum tempore, cumque voluptates sunt, impedit est 
+            distinctio doloremque fugiat labore?</p>
+        <h2>Styling Using CSS Selectors</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <mark>Voluptatibus eius dolorem impedit</mark>  sint fugit, vero pariatur 
+            <mark>Voluptatibus eius dolorem impedit</mark>  sint fugit, vero pariatur 
+            <mark>Voluptatibus eius dolorem impedit</mark>  sint fugit, vero pariatur 
+            laborum omnis. Nam culpa aperiam laudantium modi dignissimos 
+            cum in odio quos earum voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            laborum omnis. Nam culpa aperiam laudantium modi dignissimos 
+            Voluptatibus eius dolorem impedit sint fugit, vero pariatur 
+            cum in odio quos earum voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, <br>
+                Create variable : <code>int a = 10;</code> <br>
+                Consolo Output : <code>Console.WriteLite();</code> <br>
+                Consolo Output : <code>int b = 25;</code>
+            </p>
+            <hr>
+        <h2>Standart Font types</h2>
+        <h3>Serif Font</h3>
+        <p class="serif-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magni aliquid odit animi, officia mollitia nostrum 
+            quis soluta a recusandae modi eaque libero nisi vel 
+            assumenda quas eligendi totam iste voluptatibus.</p>
+        <h3>Sans Serif Font</h3>
+        <p class="sans-serif-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magni aliquid odit animi, officia mollitia nostrum 
+            quis soluta a recusandae modi eaque libero nisi vel 
+            assumenda quas eligendi totam iste voluptatibus.</p>
+        <h3>Monospace Font</h3>
+        <p class="monospace-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magni aliquid odit animi, officia mollitia nostrum 
+            quis soluta a recusandae modi eaque libero nisi vel 
+            assumenda quas eligendi totam iste voluptatibus.</p>
+        <h3>Cursive Font</h3>
+        <p class="cursive-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magni aliquid odit animi, officia mollitia nostrum 
+            quis soluta a recusandae modi eaque libero nisi vel 
+            assumenda quas eligendi totam iste voluptatibus.</p>
+        <h3>Fantasy Font</h3>
+        <p class="fantasy-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magni aliquid odit animi, officia mollitia nostrum 
+            quis soluta a recusandae modi eaque libero nisi vel 
+            assumenda quas eligendi totam iste voluptatibus.</p>
+
+
+
+       
+    
+</body>
+</html>
