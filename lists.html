@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        ol{
+            list-style-type:upper-roman;
+        }
+        .ordered-list{
+            list-style-type: decimal;
+        }
+        ul{
+            list-style-type: square;
+            /*list-style-image: url(./markers/actor-icon.png);*/
+            list-style-image :image-set(5px 5px)
+   
+        }
+        /*
+        li {
+            list-style: none;
+          }
+          li::before {
+            content: '';
+            display: inline-block;
+            height: 300%;
+            width: 300%;
+            background: url(./markers/snow.png) left no-repeat ;
+          }*/
+          dt{
+            font-weight: 600;
+            color: green;
+          }
+          dd{
+            font-weight: 200;
+            color: blue;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          /*
+          ol{
+            list-style-position: inside;
+            list-style-type: none;
+            counter-reset: number;
+          }
+          ol li::before{
+            content: counter(number) ') ';
+            counter-increment: number;
+          }
+          ul{
+            list-style-type: none;
+            font-style: italic;
+          }
+          ul li::before{
+            content: '- ';
+            color: green;
+          }
+          */
+          .seasons{
+            list-style-type: decimal;
+          }
+          ol{
+            font-weight: 600;
+          }
+          ul{font-weight: 400;}
+          #winter{color: rgb(20, 177, 255);}
+          #spring{color: rgb(39, 255, 20);}
+          #summer{color: rgb(241, 43, 43);}
+          #autumn{color: rgb(239, 209, 12);}
+          #winter li{list-style-image: url(./markers/snow.png);}
+          #spring li{list-style-image: url(./markers/leaf.png);}
+          #summer li{list-style-image: url(./markers/sun.png);}
+          #autumn li{list-style-image: url(./markers/rain.png);}
+          .myli{
+            list-style-type: lower-alpha;
+          }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>History
+            <ol>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Eveniet, error commodi.
+                    <ol class="myli">
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Debitis, quod quibusdam.</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Ipsa incidunt consectetur veritatis illum.</li>
+        <li>Voluptas tempore quo eius modi!</li>
+        <li>Animi inventore nostrum vitae tenetur?</li>
+        <li>Perferendis magni molestiae ex accusantium?</li>
+        <li>Autem, aspernatur optio! Sequi, vel?</li>
+        <li>Pariatur quibusdam facere necessitatibus numquam.</li>
+        <li>Animi, voluptate eaque. Corporis, incidunt.</li>
+        <li>Ullam qui ducimus sit reiciendis!</li>
+        <li>Id quo tempora eos consequuntur?</li>
+        <li>Unde temporibus deserunt esse quaerat.</li>
+        <li>Fuga doloribus minima temporibus maxime?</li>
+    </ol>
+    <h2>Seasons</h2>
+    <ol class="seasons">
+        <li id="winter">Winter
+            <ul>
+                <li>December</li>
+                <li>January</li>
+                <li>February</li>
+            </ul>
+        </li>
+        <li id="spring">Spring 
+            <ul>
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+            </ul>
+        </li>
+        <li id="summer">Summer
+            <ul>
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+            </ul>
+        </li>
+        <li id="autumn">Autumn
+            <ul>
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+            </ul>
+        </li>
+    </ol>
+
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ut ab qui quaerat blanditiis quidem aliquam, reprehenderit veritatis autem? Eligendi temporibus architecto repudiandae recusandae consequuntur.</li>
+        <li>Cum distinctio repudiandae recusandae optio explicabo consequatur, illum doloremque nihil, illo aut blanditiis aliquid eveniet adipisci nesciunt velit ducimus cupiditate sit pariatur, sint perspiciatis ipsa.</li>
+        <li>Amet assumenda odit placeat, quod cumque aut quos nisi. Assumenda nulla provident aperiam nam ipsum dolorem, voluptas architecto laborum adipisci harum sed recusandae impedit delectus?</li>
+    </ol>
+    <ol>
+        <li>Figures 
+            <ul>
+                <li>Circle</li>
+                <li>Square</li>
+                <li>Rectangle</li>
+            </ul>
+        </li>
+      
+        <li>Colors 
+            <ul>
+                <li>Red</li>
+                <li>Green</li>
+                <li>Yellow</li>
+            </ul>
+        </li>       
+        <li>Alias illum impedit voluptates!</li>
+        <li>Quo praesentium nisi repudiandae!</li>
+        <li>Corporis reiciendis ipsum ipsa.</li>
+    </ol>
+
+    <h2>Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque voluptatem laboriosam cumque aliquid fuga.</dd>
+        <dt>CSS</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque voluptatem laboriosam cumque aliquid fuga.</dd>
+        <dt>Java Script</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque voluptatem laboriosam cumque aliquid fuga.</dd>
+        <dt>C#</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque voluptatem laboriosam cumque aliquid fuga.</dd>
+        <dt>C++</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque voluptatem laboriosam cumque aliquid fuga.</dd>
+    </dl>
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Sit dolorum quisquam sapiente et!</li>
+        <li>Molestias dolorum doloremque vitae officiis.</li>
+        <li>Aspernatur pariatur maxime sunt eaque.</li>
+        <li>Nostrum officia eius deleniti dignissimos!</li>
+    </ol>
+
+    <ol class="ordered-list" start="5">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Asperiores, porro dolore!</li>
+        <li value="10">Fugit, ipsum dicta.</li>
+        <li>Doloribus, facilis veritatis.</li>
+        <li value="35">Dolorum, saepe nostrum?</li>
+        <li>Expedita, consectetur minus!</li>
+    </ol>
+    <ol reversed>
+        <li>Ten</li>
+        <li>Nine</li>
+        <li>Eight</li>
+        <li>Seven</li>
+        <li>Six</li>
+        <li>Five</li>
+        <li>Four</li>
+        <li>Three</li>
+        <li>Two</li>
+        <li>One</li>
+    </ol>
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Asperiores animi eligendi harum.</li>
+        <li>Veniam facilis quidem corrupti.</li>
+        <li>Maiores consectetur est hic.</li>
+        <li>Doloribus assumenda inventore accusantium.</li>
+        <li>Quas enim temporibus eos?</li>
+    </ul>
+    
+</body>
+</html>
